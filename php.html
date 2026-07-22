@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AW Courses </title>
+    <link rel="icon" href="assets/image/fab.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link  rel="stylesheet" href="assets/css/main.css">
+</head>
+<body id="home">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+    <a href="index.html"><img src="assets/image/logo-web.png" class="rounded-1" alt="logo" height="60px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">All Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn btn-warning rounded-pill" href="#">Log in</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-glow3"></div>
+
+  <div class="container">
+    <h1 class="hero-title">
+    <span class="highlight">Learn PHP</span>
+  </h1>
+  <p>Learn PHP with CodexAbhi and create dynamic, interactive websites using server-side scripting.</p>
+  </div>  
+</section>
+
+<section>
+    <div class="container mt-5 html-body">
+        <h4>what is PHP</h4>
+        <p>PHP (Hypertext Preprocessor) is a server-side scripting language used mainly for web development.</p>
+        <p>It is embedded into HTML and executed on the server, generating dynamic web pages that are sent to the user’s browser.</p>
+        <h5>Key Features</h5>
+        <ul>
+            <li><b>Full form:</b> PHP = Hypertext Preprocessor</li>
+            <li><b>Type:</b> Server-side scripting language</li>
+            <li><b>Created by:</b> Rasmus Lerdorf in 1994</li>
+            <li><b>Common use:</b> Building dynamic websites, web applications, and APIs</li>
+            <li><b>File extension:</b> .php</li>
+            <li><b>Runs on:</b> Web servers like Apache, Nginx, IIS</li>
+        </ul>
+        <p class="bg-warning p-3">&lt;?php <br>echo "Hello, World!";<br> ?></p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="element">
+                    <h4>Comments in PHP. </h4>
+                    <p class="bg-warning p-3">&lt;?php<br>
+                        // This is a single-line comment<br>
+
+                        # This is also a single-line comment<br>
+
+                        /*<br>
+                        This is a multiple-lines comment block<br>
+                        that spans over multiple<br>
+                        lines*/<br>
+                        ?></p>
+                                            
+                </div>
+
+                <div class="element">
+                    <h4>variable Definition:</h4>
+                    <p>A variable in PHP is a container for storing information that can change during program execution.</p>
+                    <h5>Rules for PHP Variables:</h5>
+                  <ul>
+                    <li>A variable always starts with a $ sign.</li>
+                    <li>The name must start with a letter or underscore (_).</li>
+                    <li>It cannot start with a number.</li>
+                    <li>Variable names are case-sensitive ($name ≠ $Name).</li>
+                  </ul>
+                  <p class="bg-warning p-2">$variable_name = value;</p>
+                </div>
+
+                <div class="element">
+                  <h4>Types of Values Variables Can Store:</h4>
+                  <ul>
+                    <li>String: "Hello World"</li>
+                    <li>Integer: 100</li>
+                    <li>Float: 10.5</li>
+                    <li>Boolean: true or false</li>
+                    <li>Array: ["apple", "banana"]</li>
+                    <li>Object: Instance of a class</li>
+                  </ul>
+                </div>
+
+                <div class="element">
+                  <h4>echo print</h4>
+                  <p>echo and print in PHP.<br>Both are used to output (display) data to the screen, but there are small differences.</p>
+                  <h5>1. echo</h5>
+                  <p>echo is a language construct used to output one or more strings.</p>
+                  <p class="bg-warning p-2">echo "Hello World!";<br>
+                    &lt;?php<br>
+                    $name = "Abhi";<br>
+                    echo "My name is $name";<br>
+                    ?><br>
+                  </p>
+                  <h5>2. print</h5>
+                  <p>print is also a language construct, similar to echo, but:</p>
+                  <ul>
+                    <li>It can only take one argument.</li>
+                    <li>It returns 1, so it can be used in expressions.</li>
+                  </ul>
+                  <p class="bg-warning p-2">print "Hello World!";</p>
+                </div>
+
+               <div class="element">
+                  <h4>PHP Data type</h4>
+                  <p>In PHP, data types define the kind of values that can be stored in a variable.
+                    <br>PHP is loosely typed, meaning you don’t need to declare a variable’s type—it’s automatically assigned based on the value.</p>
+                  <ol class="bg-warning p-2 list-unstyled">
+                    <li>1. String</li>
+                    <li>2. Integer</li>
+                    <li>3. Float (Double)</li>
+                    <li>4. Boolean</li>
+                    <li>5. Array</li>
+                    <li>6. Object</li>
+                    <li>7. NULL</li>
+                  </ol>
+                </div>
+
+                <div class="element">
+                  <h4>1. String</h4>
+                  <p>A string is a sequence of characters (text).</p>
+                  <p class="bg-warning p-2">&lt;?php<br>
+                    $name = "Abhi";<br>
+                    echo "Hello $name!";<br>
+                    ?></p>
+                </div>
+                
+                <div class="element">
+                  <h4>2. Integer</h4>
+                  <p>An integer is a whole number (without decimals).</p>
+                  <p class="bg-warning p-2">&lt;?php<br>
+                    $age = 25;<br>
+                    echo $age;<br>
+                    ?></p>
+                </div>
+              
+                <div class="element">
+                  <h4>3. Float (Double)</h4>
+                  <p>A float (or double) is a number with a decimal point.</p>
+                  <p class="bg-warning p-2">&lt;?php<br>
+                    $price = 99.99;<br>
+                    echo $price;<br>
+                    ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>4. Boolean</h4>
+                    <p>A boolean represents two values — true or false.</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        $is_valid = true;<br>
+                        echo $is_valid; // Output: 1 (true is shown as 1)<br>
+                        ?></li></p>
+                </div>
+
+                <div class="element">
+                    <h4>5. Array</h4>
+                    <p>An array stores multiple values in a single variable.</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        $fruits = array("Apple", "Banana", "Mango");<br>
+                        echo $fruits[1];<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>6. Object</h4>
+                    <p>An object is an instance of a class (used in OOP).</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        class Car {<br>
+                        public $model;<br>
+                        function __construct($model) {<br>
+                            $this->model = $model;<br>
+                        }<br>
+                        }<br>
+                        $car = new Car("BMW");<br>
+                        echo $car->model;<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>7. NULL</h4>
+                    <p>NULL means a variable has no value.</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        $x = null;<br>
+                        var_dump($x);<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>PHP Numbers</h4>
+                    <p>In PHP, numbers are used to store numeric values — like integers and decimals — and are mainly of two types:</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        $x = 100;       // positive integer<br>
+                        $y = -25;       // negative integer<br>
+                        $z = 10.5;         // Float<br>
+
+                        echo $x;  // Output: 100<br>
+                        ?></p>
+                </div>
+                <div class="element">
+                    <h4>PHP Casting</h4>
+                    <p>Type casting means converting a variable from one data type to another.
+                        In PHP, you can forcefully change the type of a variable using type casting operators.</p>
+                    <p class="bg-warning p-2">$x = (int) 10.75; <br>Here, (int) converts the float value 10.75 into an integer 10.</p>
+                </div>
+
+                <div class="element">
+                    <h4>Common Type Casts in PHP</h4>
+                    <table class="bg-warning">
+                        <tr>
+                            <th>Type Cast</th>
+                            <th>Converts To</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>(int) or (integer)</td>
+                            <td>Integer</td>
+                            <td>(int) 10.75 → 10</td>
+                        </tr>
+                        <tr>
+                            <td>(float) or (double) or (real)</td>
+                            <td>Float (decimal)</td>
+                            <td>(float) "10.5" → 10.5</td>
+                        </tr>
+                        <tr>
+                            <td>(string)</td>
+                            <td>String</td>
+                            <td>(string) 25 → "25"</td>
+                        </tr>
+                        <tr>
+                            <td>(bool) or (boolean)</td>
+                            <td>Boolean</td>
+                            <td>(bool) 0 → false, (bool) 1 → true</td>
+                        </tr>
+                        <tr>
+                            <td>(array)</td>
+                            <td>Array</td>
+                            <td>(array) "hello" → ["hello"]</td>
+                        </tr>
+                        <tr>
+                            <td>(object)</td>
+                            <td>Object</td>
+                            <td>(object) "Hi" → {scalar: "Hi"}</td>
+                        </tr>
+                        <tr>
+                            <td>(unset)</td>
+                            <td>NULL</td>
+                            <td>(unset) 45 → NULL</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="element">
+                    <h4>What is a Switch Case in PHP?</h4>
+                    <p>A switch statement is used to perform different actions based on different conditions — just like multiple if...else statements, but cleaner and easier to read.</p>
+                    <p class="bg-warning p-2">switch (expression) {<br>
+                        case value1:<br>
+                            // code to execute if expression == value1<br>
+                            break;<br>
+                        case value2:<br>
+                            // code to execute if expression == value2<br>
+                            break;<br>
+                        default:<br>
+                            // code to execute if no case matches<br>
+                    }</p>
+                    <h5>Exampal:</h5>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                    $day = "Tuesday";<br>
+
+                    switch ($day) {<br>
+                        case "Monday":<br>
+                            echo "Start of the week!";<br>
+                            break;<br>
+                        case "Tuesday":<br>
+                            echo "Second day of the week!";<br>
+                            break;<br>
+                        case "Wednesday":<br>
+                            echo "Midweek day!";<br>
+                            break;<br>
+                        default:<br>
+                            echo "It's another day!";<br>
+                    }<br>
+                    ?><br>
+                    <b>Output:</b><br>
+                    Second day of the week!
+                </p>
+                </div>
+
+                <div class="element">
+                    <h4>PHP Array</h4>
+                    <p>An array is a special variable that can store multiple values in a single name.</p>
+                    <p class="bg-warning p-2">$fruits = ["Apple", "Banana", "Mango"];</li>   
+                </div>
+
+                <div class="element">
+                    <h4>1. Index Array</h4>
+                    <p>Stores data with numeric indexes.</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                    $fruits = ["Apple", "Banana", "Mango"];<br>
+
+                    echo $fruits[0]; // Apple<br>
+                    echo "<br>";<br>
+                    echo $fruits[1]; // Banana<br>
+                    ?></li>   <br>
+                </div>
+
+                <div class="element">
+                    <h4>2. Associative Array</h4>
+                    <p>Stores data using key–value pairs.</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                    $person = [ <br>
+                    "name" => "Abhi", <br>
+                    "age" => 25, <br>
+                    "city" => "Pune" <br>
+                    ]; <br>
+
+                    echo $person["name"]; // Abhi <br>
+                    ?></li>  
+                </div>
+
+               
+            </div>
+            <div class="col-md-6">
+                 <div class="element">
+                    <h4>3. Multidimensional Array</h4>
+                    <p>An array containing one or more arrays.</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                    $students = [<br>
+                    ["Abhi", 25, "Pune"],<br>
+                    ["Ravi", 22, "Delhi"],<br>
+                    ["Sneha", 24, "Mumbai"]<br>
+                    ];<br>
+
+                    echo $students[0][0]; // Abhi<br>
+                    echo $students[1][2]; // Delhi<br>
+                    ?></p>  
+                </div>
+
+                <div class="element">
+                    <h4>What is an Operator?</h4>
+                    <p>An operator is a symbol that tells PHP to perform an operation (like addition, comparison, or assignment) on variables and values.</p>
+                    <p class="bg-warning p-2">$x = 10 + 5;<br>Here, + is an arithmetic operator.</li>   
+                </div>
+
+                <div class="element">
+                    <h4>Types of PHP Operators</h4>
+                    <ol>
+                        <li>Arithmetic Operators</li>
+                        <li>Assignment Operators</li>
+                        <li>Comparison Operators</li>
+                        <li>Logical Operators</li>
+                        <li>Increment / Decrement Operators</li>
+                        <li>String Operators</li>
+                    </ol>
+                </div>
+                
+                <div class="element">
+                    <h4>1. Arithmetic Operators</h4>
+                    <p>Used to perform mathematical operations.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>$x + $y</td>
+                            <td>Sum of $x and $y</td>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>$x + $y</td>
+                            <td>Sum of $x and $y</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                            <td>$x - $y</td>
+                            <td>Difference</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            <td>$x * $y</td>
+                            <td>Product</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                            <td>$x / $y</td>
+                            <td>Quotient</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus (Remainder)</td>
+                            <td>$x % $y</td>
+                            <td>Remainder</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                            $x = 10;<br>
+                            $y = 3;<br>
+                            echo $x + $y; // 13<br>
+                            echo $x - $y; // 7<br>
+                            echo $x * $y; // 30<br>
+                            echo $x / $y; // 3.33<br>
+                            echo $x % $y; // 1<br>
+                            ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>2. Assignment Operators</h4>
+                    <p>Used to assign values to variables.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Example</th>
+                            <th>Same As</th>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>$x = 10</td>
+                            <td>$x = 10</td>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>$x += 5</td>
+                            <td>$x = $x + 5</td>
+                        </tr>
+                        <tr>
+                            <td>-=</td>
+                            <td>$x -= 5</td>
+                            <td>$x = $x - 5</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>$x *= 5</td>
+                            <td>$x = $x * 5</td>
+                        </tr>
+                        <tr>
+                            <td>/=</td>
+                            <td>$x /= 5</td>
+                            <td>$x = $x / 5</td>
+                        </tr>
+                        <tr>
+                            <td>%=</td>
+                            <td>$x %= 5</td>
+                            <td>$x = $x % 5</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                        $x = 10;<br>
+                        $x += 5; echo $x; // 15<br>
+                        $x -= 5; echo $x; // 5<br>
+                        $x *= 5; echo $x; // 50<br>
+                        $x /= 5; echo $x; // 2<br>
+                        $x %= 5; echo $x; // 0<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>3. Comparison Operators</h4>
+                    <p>Used to compare two values — return true or false.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Equal</td>
+                            <td>$x == $y</td>
+                        </tr>
+                        <tr>
+                            <td>===</td>
+                            <td>Identical (value + type)</td>
+                            <td>$x === $y</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Not equal</td>
+                            <td>$x != $y</td>
+                        </tr>
+                        <tr>
+                            <td>!==</td>
+                            <td>Not identical</td>
+                            <td>$x !== $y</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>Greater than</td>
+                            <td>$x > $y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;</td>
+                            <td>Less than</td>
+                            <td>$x = $x % 5</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>Greater or equal</td>
+                            <td>$x >= $y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;=</td>
+                            <td>Less or equal</td>
+                            <td>$x &lt;= $y</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                        $x = 10;<br>
+                        $y = 20;<br>
+                        var_dump($x &lt; $y);  // true<br>
+                        var_dump($x > $y);  // flase<br>
+                        var_dump($x == $y);  // false<br>
+                        var_dump($x === $y);  // false<br>
+                        var_dump($x != $y);  // true<br>
+                        var_dump($x >= $y);  // false<br>
+                        var_dump($x &lt;= $y);  // true<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>4. Logical Operators</h4>
+                    <p>Used to combine conditions.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>&& or and</td>
+                            <td>AND</td>
+                            <td>$x && $y</td>
+                            <td>True if both are true</td>
+                        </tr>
+                        <tr>
+                            <td>!</td>
+                            <td>NOT</td>
+                            <td>!$x</td>
+                            <td>True if $x is false</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                           $a = true;<br>
+                            $b = false;<br>
+                            var_dump($a && $b); // false<br>
+                            var_dump($a ! $b); // true<br>
+                            ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>5. Increment / Decrement Operators</h4>
+                    <p>Used to increase or decrease a variable’s value.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>++$x</td>
+                            <td>Pre-increment</td>
+                            <td>Increments before use</td>
+                        </tr>
+                        <tr>
+                            <td>$x++</td>
+                            <td>Post-increment</td>
+                            <td>Increments after use</td>
+                        </tr>
+                        <tr>
+                            <td>--$x</td>
+                            <td>Pre-decrement</td>
+                            <td>Decrements before use</td>
+                        </tr>
+                        <tr>
+                            <td>$x--</td>
+                            <td>Post-decrement</td>
+                            <td>Decrements after use</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                        $x = 5;<br>
+                        echo ++$x; // 6<br>
+                        echo $x++; // 5<br>
+                        echo $x--; // 6 then 5<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>6. String Operators</h4>
+                    <p>Used to handle string concatenation.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>Concatenation</td>
+                            <td>$x . $y</td>
+                        </tr>
+                        <tr>
+                            <td>.=</td>
+                            <td>Concatenation assignment</td>
+                            <td>$x .= $y</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                        $first = "Hello";<br>
+                        $last = "World";<br>
+                        echo $first . " " . $last; // Hello World<br>
+                        ?></p>
+                </div>
+
+                
+                <div class="element">
+                    <h4>5. Increment / Decrement Operators</h4>
+                    <p>Used to increase or decrease a variable’s value.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>++$x</td>
+                            <td>Pre-increment</td>
+                            <td>Increments before use</td>
+                        </tr>
+                        <tr>
+                            <td>$x++</td>
+                            <td>Post-increment</td>
+                            <td>Increments after use</td>
+                        </tr>
+                        <tr>
+                            <td>--$x</td>
+                            <td>Pre-decrement</td>
+                            <td>Decrements before use</td>
+                        </tr>
+                        <tr>
+                            <td>$x--</td>
+                            <td>Post-decrement</td>
+                            <td>Decrements after use</td>
+                        </tr>
+                    </table>
+                    <p class="bg-warning p-2 mt-3">&lt;?php<br>
+                        $x = 5;<br>
+                        echo ++$x; // 6<br>
+                        echo $x++; // 5<br>
+                        echo $x--; // 6 then 5<br>
+                        ?></p>
+                </div>
+
+                <div class="element">
+                    <h4>Loop in PHP</h4>
+                    <ol>
+                        <li>for Loop</li>
+                        <li>while Loop</li>
+                        <li>do...while Loop</li>
+                    </ol>
+                </div>
+
+                <div class="element">
+                    <h4>1. for Loop</h4>
+                    <p>Used when you know exactly how many times to run the code.</p>
+                    <p class="bg-warning p-2">for (initialization; condition; increment) {<br>
+                            // code<br>
+                        }</p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        for ($i = 1; $i &lt;= 5; $i++) {<br>
+                        echo "Iteration: $i";<br>
+                        }<br>
+                        <b>output:</b><br>
+                        Iteration: 1<br>
+                        Iteration: 2<br>
+                        Iteration: 3<br>
+                        Iteration: 4<br>
+                        Iteration: 5<br>
+                    </p>
+                </div>
+
+                <div class="element">
+                    <h4>2. while Loop</h4>
+                    <p>Executes the code while a condition is true.</p>
+                    <p class="bg-warning p-2">Initialize<br>
+                        While(Condition){<br>
+                        Loop statement;<br>
+                        Increment/decrement;<br>
+                        }<br>
+                    </p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        $x = 1;
+                        while ($x &lt;= 5) {
+                        echo "Number: $x <br>";
+                        $x++;
+                        }
+                        ?>
+                        <b>output:</b><br>
+                        Number: 1<br>
+                        Number: 2<br>
+                        Number: 3<br>
+                        Number: 4<br>
+                        Number: 5<br>
+                    </p>
+                </div>
+
+                <div class="element">
+                    <h4>3. Do While Loop</h4>
+                    <p>Executes the code once, then checks the condition.</p>
+                    <p class="bg-warning p-2">Initialize<br>
+                    Do{<br>
+                        Loop statement:<br>
+                        Increment/Decrement<br>
+                    }while(Condition)<br>
+                    </p>
+                    <p class="bg-warning p-2">&lt;?php<br>
+                        $x = 1;<br>
+                        do {<br>
+                        echo "Count: $x <br>";
+                        $x++;<br>
+                        } while ($x &lt;= 3);<br>
+                        ?><br>
+                        <b>output:</b><br>
+                        Count: 1<br>
+                        Count: 2<br>
+                        Count: 3<br>
+                    </p>
+                </div>
+
+        </div>
+  
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="assets/image/logo-web.png" class="rounded mb-2" height="70px">
+        <p class="pe-5">Providing web development solutions to help businesses grow online with innovative designs and functionality.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Link</h4>
+        <a href="index.html">Home</a><br>
+        <a href="about.html">About Us</a><br>
+        <a href="courses.html">Courses</a><br>
+        <a href="contact.html">Contact US</a>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact US</h4>
+        <h6>Phone: +91 7275787029</h6>
+        <h6>Email: yadavabhishekm19@gmail.com</h6>
+        <h6>Location: Kalyan, Mumbai</h6>
+        <a href="https://www.instagram.com/yadav_abhi_8853/" class="footer-fab"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/YadavAbhi87105" class="footer-fab"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61576501299364" class="footer-fab"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center pt-5">Copyright © 2026. All rights reserved CodexAbhi</p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar-custom");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+</body>
+</html>

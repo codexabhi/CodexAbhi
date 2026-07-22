@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AW Courses </title>
+    <link rel="icon" href="assets/image/fab.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link  rel="stylesheet" href="assets/css/main.css">
+</head>
+<body id="home">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+    <a href="index.html"><img src="assets/image/logo-web.png" class="rounded-1" alt="logo" height="60px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">All Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn btn-warning rounded-pill" href="#">Log in</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-glow3"></div>
+
+  <div class="container">
+    <h1 class="hero-title">
+    <span class="highlight">Learn CSS</span>
+  </h1>
+  <p>Learn CSS with CodexAbhi and design beautiful, responsive websites using styling, animations, layouts, colors, and modern visual effects.</p>
+  </div>  
+</section>
+
+<section>
+    <div class="container mt-5 html-body">
+        <h4>What is css</h4>
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe how HTML elements are displayed on a web page — including layout, colors, fonts, and spacing.</p>
+        
+        <h4 class="pt-3">Example</h4>
+        <p class="bg-white p-3">
+            body {<br>
+            background-color: light;<br>
+            }<br><br>
+
+            h1 {<br>
+            color: white;<br>
+            text-align: center;<br>
+            }<br><br>
+
+            p {<br>
+            font-family: sans serif;<br>
+            font-size: 20px;<br>
+            }<br>
+        </p>
+        
+        
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="element">
+                    <h4>CSS Selector</h4>
+                    <p>A CSS selector is a pattern used to select (target) HTML elements that you want to style. It tells the browser “which element(s) should get the CSS rules.”</p>
+                    <ol>
+                        <li>p → is the selector (it selects all &lt;p> tags)</li>
+                        <li>color: blue; → is the declaration (it applies the blue color)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="element">
+                    <h4>How to Add CSS</h4>
+                    <ol>
+                        <li>Inline CSS</li>
+                        <li>Internal CSS</li>
+                        <li>External CSS</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                
+                <div class="element">
+                    <h4>1. Inline CSS</h4>
+                    <p>CSS is written directly inside an HTML tag using the style attribute.</p>
+                    <ul class="list-unstyled bg-warning">
+                        <li> &lt;p style="color: blue; font-size: 20px;">This is inline CSS. &lt;/p></li>
+                    </ul>
+                </div>
+
+                <div class="element">
+                    <h4>2. Internal CSS</h4>
+                    <p>CSS is written inside the &lt;style> tag in the &lt;head> section of your HTML file.</p>
+                    <p class="bg-warning p-3">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        <b>&lt;style&gt;</b><br>
+                        h1 {<br>
+                        color: red;<br>
+                        text-align: center;<br>
+                        }<br>
+                        p {<br>
+                        font-size: 18px;<br>
+                        }<br>
+                        <b>&lt;/style&gt;</b><br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+
+                        &lt;h1&gt;Hello World&lt;/h1&gt;<br>
+                        &lt;p&gt;This is internal CSS.&lt;/p&gt;<br>
+
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </p>
+                </div>
+
+                <div class="element">
+                    <h4>3. External CSS</h4>
+                    <p>CSS is written in a separate .css file, and linked to your HTML using the &lt;link> tag.</p>
+                    <p>Step 1: Create a file named style.css</p>
+                    <p class="bg-warning p-3">
+                        h1 {<br>
+                        color: green;<br>
+                        }<br>
+                        p {<br>
+                        font-size: 18px;<br>
+                        }<br>
+                    </p>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Comment</h4>
+                    <p>A CSS comment is used to add notes or explanations inside your CSS code.<br>
+                        Comments help you or others understand the code better — and they are ignored by the</p>
+                    <p class="bg-warning p-3">/* This is a CSS comment */</p>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Text Color</h4>
+                    <p>In CSS, you can change the color of text using the color property.</p>
+                    <table class="border 1">
+                        <tr>
+                            <th>Type</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Color Name</td>
+                            <td>color: red;</td>
+                            <td>Uses standard color names</td>
+                        </tr>
+                        <tr>
+                            <td>Hex Code</td>
+                            <td>color: #ff0000;</td>
+                            <td>#RRGGBB format</td>
+                        </tr>
+                        <tr>
+                            <td>RGB Value</td>
+                            <td>color: rgb(255, 0, 0);</td>
+                            <td>Red, Green, Blue values</td>
+                        </tr>
+                        <tr>
+                            <td>RGBA Value</td>
+                            <td>color: rgba(255, 0, 0, 0.5);</td>
+                            <td>Adds transparency</td>
+                        </tr>   
+                    </table>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Backgrounds</h4>
+                    <p>The CSS background property is used to style the background of HTML elements — you can set color, image, position, repeat, size, and more.</p>
+                    <h5>1. Background Color</h5>
+                    <p class="bg-warning p-2">body {<br> background-color: lightblue; <br>}</p>
+                    <h5>2. Background Image</h5>
+                    <p class="bg-warning p-2">body {<br>background-image: url("background.jpg"); <br>}</p>
+                    <h5>3. Background Repeat</h5>
+                    <p class="bg-warning p-2">body {<br> background-image: url("pattern.png");<br> background-repeat: no-repeat; <br>}</p>
+                    <h5>4. Background Position</h5>
+                    <p class="bg-warning p-2">body {<br> background-image: url("image.jpg");<br>background-repeat: no-repeat; <br>background-position: center top; <br>}</p>
+                    <h5>5. Background Size</h5>
+                    <p class="bg-warning p-2">body {<br> background-image: url("image.jpg");<br>background-size: cover; <br>}</p>
+                    <h5>6. Background Attachment</h5>
+                    <p class="bg-warning p-2">body {<br> background-image: url("bg.jpg");<br> background-attachment: fixed;<br>}</p>
+                </div>
+
+                <div class="element">
+                    <h4>1. Border Styles</h4>
+                    <p>
+                    p.dotted {border-style: dotted;}<br>
+                    p.dashed {border-style: dashed;}<br>
+                    p.solid {border-style: solid;}<br>
+                    p.double {border-style: double;}<br>
+                    p.groove {border-style: groove;}<br>
+                    p.ridge {border-style: ridge;}<br>
+                    p.inset {border-style: inset;}<br>
+                    p.outset {border-style: outset;}<br>
+                    p.none {border-style: none;}<br>
+                    p.hidden {border-style: hidden;}<br>
+                    p.mix {border-style: dotted dashed solid double;}<br>
+                    </p>
+                    <h5>2. Basic Border Syntax</h5>
+                    <p class="bg-warning p-2">selector { <br>border: width style color;<br>}</p>
+                    <h5>3. Border Width, Color, and Style Separately</h5>
+                    <p class="bg-warning p-2">selector { <br>border-width: 3px;<br> border-style: dashed; <br>border-color: green;<br>}</p>
+                    <h5>4. Individual Sides</h5>
+                    <p class="bg-warning p-2">p { <br>border-top: 2px solid red;<br> border-right: 2px dashed blue;<br>  border-bottom: 2px dotted green;<br> border-left: 2px solid black;<br>}</p>
+                    <h5>5. Rounded Borders</h5>
+                    <p class="bg-warning p-2">div { <br>border: 2px solid blue;<br> border-radius: 10px;<br>}</p>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="element">
+                    <h4>CSS Margin</h4>
+                    <p>The CSS margin property is used to create space outside an element, i.e., the distance</p>
+                    <ul class="p-2 bg-warning list-unstyled">
+                        <li>margin-top</li>
+                        <li>margin-bottom</li>
+                        <li>margin-left</li>
+                        <li>margin-right</li>
+                    </ul>
+                    <p><b>selector </b>{<br> margin-top: 10px;<br> margin-right: 15px;<br> margin-bottom: 20px;<br> margin-left: 25px;<br>}</p>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Padding</h4>
+                    <p>The CSS padding property is used to create space inside an element, i.e., the distance</p>
+                    <ul class="p-2 bg-warning list-unstyled">
+                        <li>padding-top</li>
+                        <li>padding-bottom</li>
+                        <li>padding-left</li>
+                        <li>padding-right</li>
+                    </ul>
+                    <p><b>selector</b> {<br> padding-top: 10px;<br> padding-right: 15px;<br> padding-bottom: 20px;<br> padding-left: 25px;<br>}</p>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Height and Width</h4>
+                    <p>The CSS height and width properties are used to set the size of an HTML element.</p>
+                    <h5>1. Basic Syntax</h5>
+                    <p class="p-2 bg-warning">selector {<br>width: value; <br>height: value;<br>}</p>
+                    <h5>2. Example – Percentage</h5>
+                    <p class="p-2 bg-warning">selector {<br>width: 50%; <br> height: 150px; <br>background-color: lightgreen;<br>}</p>
+                    <h5>3. Min & Max</h5>
+                    <p class="p-2 bg-warning">selector {<br>width: 200px;<br> max-width: 400px;<br> min-width: 100px;<br> height: auto;<br>}</p>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Font</h4>
+                    <p>The CSS font properties are used to style the text of HTML elements. You can control font family, size, weight, style, and more.</p>
+                    <h5>1. Font Family</h5>
+                    <p class="p-2 bg-warning">p {<br> font-family: Arial, sans-serif; <br>}</p>
+                    <h5>2. Font Size</h5>
+                    <p class="p-2 bg-warning">p { <br> font-size: 18px;  /* can also use em, rem, %, etc. */ <br>}</p>
+                    <h5>3. Min & Max</h5>
+                    <p class="p-2 bg-warning">selector {<br>width: 200px;<br> max-width: 400px;<br> min-width: 100px;<br> height: auto;<br>}</p>
+                </div>
+
+                <div class="element">
+                    <h4>CSS Position</h4>
+                    <p>The CSS position property is used to control how an element is positioned on a web page.</p>
+                    <h5>Position Types</h5>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>static</td>
+                            <td>Default value. Element follows normal flow of the page.</td>
+                        </tr>
+                        <tr>
+                            <td>relative</td>
+                            <td>Element is positioned relative to its normal position.</td>
+                        </tr>
+                        <tr>
+                            <td>absolute</td>
+                            <td>Element is positioned relative to nearest positioned ancestor (not static).</td>
+                        </tr>
+                        <tr>
+                            <td>fixed</td>
+                            <td>Element is positioned relative to the viewport, stays in place when scrolling.</td>
+                        </tr>
+                        <tr>
+                            <td>sticky</td>
+                            <td>Element behaves like relative until a scroll threshold, then becomes fixed.</td>
+                        </tr>
+                    </table>
+                    <h5>1. Example: Static (Default)</h5>
+                    <p class="p-2 bg-warning">div {<br> position: static; <br>background-color: lightblue;<br>}</p>
+                    <h5>2. Example: Relative</h5>
+                     <p class="p-2 bg-warning">div {<br> position: relative;<br>top: 20px;<br>left: 30px;<br>background-color: lightgreen;<br>}</p>
+                    <h5>3. Example: Absolute</h5>
+                    <p class="p-2 bg-warning">div {<br> position: absolute;<br>top: 20px; /* from nearest positioned ancestor */<br>left: 30px;<br>background-color: lightgreen;<br>}</p>
+                    <h5>4. Example: Fixed</h5>
+                    <p class="p-2 bg-warning">div {<br> position: fixed;<br>top: 0px;<br>}</p>
+                    <h5>5. Example: Sticky</h5>
+                    <p class="p-2 bg-warning">div {<br> position: sticky;<br>top: 0px;<br>}</p>
+                </div>
+
+                <div class="element">
+                    <h4>z-index</h4>
+                    <p>The z-index property in CSS controls the stacking order of elements along the z-axis (front-to-back).</p>
+                    <ul>
+                        <li>Higher z-index → element appears on top</li>
+                        <li>Lower z-index → element appears behind</li>
+                    </ul>
+                    <p><b>Note:</b> z-index works only on elements with position set to relative, absolute, fixed, or sticky.</p>
+                    <p class="bg-warning p-2">selector {<br> z-index: number;<br>}</p>
+                </div>
+
+        </div>
+        
+
+        <div class="ps-3">
+            <h4 class="mt-5">CSS Box Model</h4>
+            <p>The CSS Box Model is a fundamental concept that explains how every HTML element is treated as a rectangular box.It consists of 4 parts:</p>
+            <ol>
+                <li><b>Content - </b> The actual content of the element (text, image, etc.)</li>
+                <li><b>Padding - </b> Space inside the element, between content and border</li>
+                <li><b>Border - </b> Surrounds the padding and content</li>
+                <li><b>Margin - </b> Space outside the border, separates element from others</li>
+            </ol>
+            <img src="assets/image/box-modal.png" class="img-fluid mt-3">
+        </div>
+
+        
+        
+
+        
+
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="assets/image/logo-web.png" class="rounded mb-2" height="70px">
+        <p class="pe-5">Providing web development solutions to help businesses grow online with innovative designs and functionality.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Link</h4>
+        <a href="index.html">Home</a><br>
+        <a href="about.html">About Us</a><br>
+        <a href="courses.html">Courses</a><br>
+        <a href="contact.html">Contact US</a>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact US</h4>
+        <h6>Phone: +91 7275787029</h6>
+        <h6>Email: yadavabhishekm19@gmail.com</h6>
+        <h6>Location: Kalyan, Mumbai</h6>
+        <a href="https://www.instagram.com/yadav_abhi_8853/" class="footer-fab"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/YadavAbhi87105" class="footer-fab"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61576501299364" class="footer-fab"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center pt-5">Copyright © 2026. All rights reserved CodexAbhi</p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar-custom");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+</body>
+</html>
